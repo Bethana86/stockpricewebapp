@@ -10,13 +10,13 @@ tf.compat.v1.get_default_graph
 tf.compat.v1.train.Optimizer
 tf.compat.v1.executing_eagerly_outside_functions
 
-model = load_model(r'Stock Predictions Model.keras')
+model = load_model(r'https://github.com/Bethana86/stockpricewebapp/blob/main/StockPredictionsModel.keras')
 
 st.header('Stock Market Predictor')
 
 stock =st.text_input('Enter Stock Symnbol', 'GOOG')
 start = '2012-01-01'
-end = '2022-12-31'
+end = '2023-12-31'
 
 data = yf.download(stock, start ,end)
 
